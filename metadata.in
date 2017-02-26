@@ -1,0 +1,4 @@
+[Runtime]
+name=@FPORG@.BasePlatform
+runtime=@FPORG@.BasePlatform/@FPARCH@/@FPVER@
+sdk=@FPORG@.BaseSdk/@FPARCH@/@FPVER@
