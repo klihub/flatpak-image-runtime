@@ -1,4 +1,4 @@
 [Runtime]
-name=@FPORG@.BasePlatform
-runtime=@FPORG@.BasePlatform/@FPARCH@/@FPVER@
-sdk=@FPORG@.BaseSdk/@FPARCH@/@FPVER@
+name=@DOMAIN@.BasePlatform
+runtime=@DOMAIN@.BasePlatform/@MACHINE@/@BRANCH@
+sdk=@DOMAIN@.BaseSdk/@MACHINE@/@BRANCH@

@@ -1,15 +1,15 @@
 [Unit]
-Description=Fake flatpak runtime (@FPTYPE@)
+Description=Fake flatpak image runtime
 After=local-fs.target
 
 [Service]
 Type=oneshot
 RemainAfterExit=yes
 
-Environment=_SHA1=@FPSHA1@
-Environment=_BRD=/var/lib/flatpak/runtime/@FPORG@.BasePlatform/@FPARCH@/@FPVER@
-Environment=_META=/usr/share/flatpak-image-runtime/metadata.@FPTYPE@
-Environment=_DEPL=/usr/share/flatpak-image-runtime/deploy.@FPTYPE@
+Environment=_SHA1=@SHA1@
+Environment=_BRD=/var/lib/flatpak/runtime/@DOMAIN@.BasePlatform/@MACHINE@/@BRANCH@
+Environment=_META=/usr/share/flatpak-image-runtime/metadata.image
+Environment=_DEPL=/usr/share/flatpak-image-runtime/deploy.image
 
 ExecStart=/bin/mkdir -p ${_BRD}/${_SHA1}/files/bin/../sbin/../lib/../libexec/../share/../etc
 ExecStart=/bin/cp     ${_META} ${_BRD}/${_SHA1}/metadata
