@@ -10,7 +10,7 @@ BRANCH      = @_BRANCH_@
 SHA1        = 1234567890abcdeffedcba09876543211234567890abcdeffedcba0987654321
 
 IMAGE_SUBST = sed "s:@REMOTE@:$(REMOTE):g;s:@SHA1@:$(SHA1):g" | \
-		sed "s:@DOMAIN@:$(DOMAIN):g;s:@MACHINE@:$(ARCH):g" | \
+		sed "s:@DOMAIN@:$(DOMAIN):g;s:@ARCH@:$(ARCH):g" | \
 		sed "s:@BRANCH@:$(BRANCH):g"
 
 %.image: %.in

@@ -7,7 +7,7 @@ Type=oneshot
 RemainAfterExit=yes
 
 Environment=_SHA1=@SHA1@
-Environment=_BRD=/var/lib/flatpak/runtime/@DOMAIN@.BasePlatform/@MACHINE@/@BRANCH@
+Environment=_BRD=/var/lib/flatpak/runtime/@DOMAIN@.BasePlatform/@ARCH@/@BRANCH@
 Environment=_META=/usr/share/flatpak-image-runtime/metadata.image
 Environment=_DEPL=/usr/share/flatpak-image-runtime/deploy.image
 

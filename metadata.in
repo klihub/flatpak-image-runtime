@@ -1,4 +1,4 @@
 [Runtime]
 name=@DOMAIN@.BasePlatform
-runtime=@DOMAIN@.BasePlatform/@MACHINE@/@BRANCH@
-sdk=@DOMAIN@.BaseSdk/@MACHINE@/@BRANCH@
+runtime=@DOMAIN@.BasePlatform/@ARCH@/@BRANCH@
+sdk=@DOMAIN@.BaseSdk/@ARCH@/@BRANCH@
